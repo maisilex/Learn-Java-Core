@@ -1,0 +1,9 @@
+jar cfe hw.jar HelloWorld HelloWorld.class
+jar tf hw.jar
+jar xf hw.jar
+
+java -jar hw.jar
+java -classpath hw.jar HelloWorld
+
+javac -classpath lib.jar HelloWorld.java
+java -classpath lib.jar:hw.jar helloWorld # Windows ";"
